@@ -3,7 +3,7 @@
 
 #include <string.h>
 #include <iostream>
-#include <glib-object.h>
+#include <glib-2.0/glib-object.h>
 using namespace std;
 
 // Constants

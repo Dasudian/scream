@@ -1,7 +1,6 @@
 #ifndef SCREAM_RX
 #define SCREAM_RX
-#include <glib-object.h>
-
+#include <glib-2.0/glib-object.h>
 class ScreamRx {
 public:
     ScreamRx();

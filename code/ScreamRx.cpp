@@ -6,7 +6,7 @@ using namespace std;
 
 ScreamRx::Stream::Stream(guint32 ssrc_) {
     ssrc = ssrc_;
-    ackVector = 0xffffffff;
+    ackVector = 0xffff;
     nLoss = 0;
     receiveTimestamp = 0x0;
     highestSeqNr = 0x0;

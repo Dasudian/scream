@@ -8,7 +8,6 @@
 #include "ScreamTx.h"
 #include "ScreamRx.h"
 #include <iostream>
-#include <windows.h>
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -20,7 +19,7 @@ const gboolean isChRate = FALSE;
 const guint64 rtcpFbInterval_us = 30000;
 const gfloat kFrameRate = 25.0f;
 
-int _tmain(int argc, _TCHAR* argv[])
+int main(int argc, char *argv[])
 {
     ScreamTx *screamTx = new ScreamTx();
     ScreamRx *screamRx = new ScreamRx();
@@ -150,7 +149,7 @@ int _tmain(int argc, _TCHAR* argv[])
         }
 
         n++;
-        Sleep(0) ;
+        // Sleep(0) ;
     }
 
     return 0;

@@ -8,7 +8,6 @@
 #include "ScreamTx.h"
 #include "ScreamRx.h"
 #include <iostream>
-#include <windows.h>
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -18,7 +17,7 @@ const gfloat Tmax = 100.0f;
 const gboolean testLowBitrate = FALSE;
 const gboolean isChRate = FALSE; 
 
-int _tmain(int argc, _TCHAR* argv[])
+int main(int argc, char* argv[])
 {
 
     guint64 rtcpFbInterval_us;
@@ -147,7 +146,7 @@ int _tmain(int argc, _TCHAR* argv[])
                 netQueueRate->rate = 2000e3;
 
         n++;
-        Sleep(0) ;
+        // Sleep(0) ;
     }
 
     return 0;
